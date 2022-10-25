@@ -1,0 +1,48 @@
+body {
+
+    background-color: #f2f2f2;
+    margin: 26px;
+    padding: 20px;
+    padding-left: 10px;
+
+}
+
+p {
+
+    font-size: 14pt;
+    font-family: Arial;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: red;
+
+}
+
+h1 { 
+
+    border-top: 30px;
+    width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2 {
+
+    border: 10px solid blue;
+    margin-left: 20;
+
+}
+
+div {
+
+    border-width: medium;
+    border-style: solid;
+    border-color: green;
+
+}
+.zadanie{
+    border-width: 4px;
+    border-style: dotted;
+    border-color: green;
+}
+

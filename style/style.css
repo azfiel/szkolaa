@@ -1,0 +1,38 @@
+header{
+    height: 152px;
+    background-color: black;
+}
+body{
+    color: red;
+    background-color: gray;
+}
+marquee{
+    font-size: 25px;
+    font-style:bold;
+}
+.menu{
+    font-size: 30px;
+}
+
+#lewy{
+    float: left;
+}
+#prawy{
+    float: right;
+}
+#prawy img{
+    height: 500px;
+}
+.menu a{
+    color: red;
+    font-style: bold;
+}
+footer{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+marquee{
+    font-size: 30px;
+    font-style: bold;
+}

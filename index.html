@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="skrypt.js"></script>
+</head>
+<body>
+    <button id="1" onclick="funkcja()">123</button>
+    <h1>assa</h1>
+    <h2></h2>
+    <script>
+        document.write("a="+a+"<br>b="+b)
+if(a>b){
+    document.write("<br>a > b")
+}
+else if(b>a){
+    document.write("<br>b > a")
+}
+else{
+    document.write("<br>b = a")
+}
+
+switch(a*b){
+    case 10:
+        document.write("Wynik to 10")
+        break;
+    case 40:
+        document.write("Wynik to 40")
+        break;
+    case 120:
+        document.write("Wynik to 120")
+        break;
+    default:
+    document.write("<br>błąd")
+    break;
+}
+
+const dz = new Date();
+let tygodnia = dz.getDay();
+switch(tygodnia){
+    case 1:
+        var dzien="poniedzialek"
+        break;
+    case 2:
+        var dzien="wtorek"
+        break;
+    case 3:
+        var dzien="sroda"
+        break;
+    case 4:
+        var dzien="czwartek"
+        break;
+    case 5:
+        var dzien="piatek"
+        break;
+    case 6:
+        var dzien="sobota"
+        break;
+    case 7:
+        var dzien="niedziela"
+        break;
+}
+
+document.write("<br>")
+switch (dzien) {
+    case "poniedziałek":
+        document.write("Cały dzień tygodnia przed nami")
+        break;
+    case "wtorek":
+        document.write("Kiedy bedzie wolne?")
+        break;
+    case "sroda":
+        document.write("Dopiero srodek tygodnia")
+        break;
+    case "czwartek":
+        document.write("Juz czwartek")
+        break;
+    case "piatek":
+        document.write("Wreszcie piatek")
+        break;
+    case "sobota":
+        document.write("Czas na odpoczynek")
+        break;
+    case "niedziela":
+        document.write("Jutro znowu poniedzialek")
+        break;
+    default:
+        document.write("Błąd")
+        break;
+}
+document.write("<br>")
+for(var j=0; j<5; j++){
+    for(var i=0; i<5; i++){
+        document.write(i + " ")
+    }
+    document.write("<br>")
+}
+
+var y=1;
+var z=1;
+for(var j=1; j<6; j++){
+    for(; i<6; i++){
+        document.write(y+"  ")
+    }
+
+z=z+1;
+i=z;
+document.write("<br>")
+}
+    </script>
+</body>
+</html>

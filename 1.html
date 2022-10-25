@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrypt</title>
+    <link rel="icon" href="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg">
+</head>
+<body>
+    <br>
+    <h1 id="h1">H1</h1>
+    <input id="numer" type="number">
+    <button id="prz1" onclick="funkcja()">Wybierz</button>
+    <br>
+    <script>
+        var x=10
+        while (x<27) {
+            var x=++x;
+            document.write(x+"<br>");
+        }
+
+        for(var i=0; i<=30; i++){
+            if((i % 3) !=0){
+                continue;
+            }
+            document.write(i+"; ");
+        }
+
+        for(var n=1;n<=10;n++){
+            for(var m=1;m<10;m++){
+                document.write(n,"*",m,"=",(n*m),"<br>");
+            }
+        }
+
+
+        function funkcja(){
+            var numer = document.getElementById("numer").value;
+            console.log(numer);
+            document.getElementById("h1").style.fontSize= numer;
+        }
+    </script>
+
+
+
+
+</body>
+</html>

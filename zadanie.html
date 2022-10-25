@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:5500/main.html -->
+<html lang="pl-PL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>zadanie</title>
+        
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            section{
+                overflow: hidden;
+            }
+            #naglowek{
+                width: 100%;
+                background-color: #FCF;
+            }
+            
+            #ramka{
+                width: 1000px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #stopka{
+                width: 100%;
+                background-color: #93f;
+                clear: both;
+                text-align: center;
+            }
+            .kolumny{
+                width: 30%;
+                margin-top: 10px;
+                margin-right: 2%;
+                margin-bottom: 2%;
+                margin-left: 10px;
+            }
+            #kol1{
+                float: left;
+                background-color: #3ff;
+            }
+            #kol2{
+                float: left;
+                background-color: #CF3;
+            }
+            #kol3{
+                float: left;
+                background-color: #F93;
+            }
+        </style>
+</head><body>
+    <header id="naglowek">
+        Tutaj znajdzie się zawartość nagłówka strony 
+        <nav>Tutuaj będzie NAWIGACJA</nav>
+    </header>
+    <div id="ramka">
+        <section class="kolumny" id="kol1">
+                <h3>Kolumna</h3>
+                Tutaj znajdziecie zawartość kolumny1
+            <article class="artyk" id="arl_1">
+                <h4>Artukuł 1_1</h4>
+                Artykuł1 w kolumnie1
+            </article>
+            <article class="kolumny" id="ar2_1">
+                <h4>Artykuł 2_1</h4>
+                Atykuł2 w kolumnie1
+            </article>
+        </section>
+        <section class="kolumny" id="kol2">
+                <h3>Kolumna 2</h3>
+                Tutaj znajdzie się zawartość kolumny2 
+                <article class="artyk" id="arl1_2">
+                    <h4>Artykuł 1_2</h4>
+                    Artykuł w kolumnie2
+                </article>
+                <article class="artyk" id="ar2_2">
+                    <h4>Artykuł 2_2</h4>
+                    Artykuł2 w kolumnie2
+                </article>
+                <article class="artyk" id="ar3_2">
+                    <h4>Artykuł3_2</h4><h4>
+                    Artykuł3 w kolumnie2
+                </h4></article>
+            </section>
+            <section class="kolumny" id="kol3">
+                <h3>Kolumna 3</h3>
+                Tutaj znajdzie się zawartość kolumny3
+                <article class="artyk" id="arl_3">
+                    <h4>Artykuł 1_3</h4>
+                    Artykuł w kolumnie3
+                    </article>
+                </section></div>
+<footer id="stopka">
+    Tutaj znajduje sie zawartosc stopki
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
